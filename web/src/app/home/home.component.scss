@@ -154,8 +154,6 @@
   height: 400px;
   width: 400px;
 
-  -webkit-mask-image: url('~src/assets/mask-image.png');
-  mask-image: url('~src/assets/mask-image.png');
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-position: center;
@@ -170,5 +168,16 @@
     mask-size: 400px 320px;
   }
 }
+
+.mask-1 {
+  -webkit-mask-image: url('~src/assets/mask-image.png');
+  mask-image: url('~src/assets/mask-image.png');
+}
+.mask-2 {
+  -webkit-mask-image: url('~src/assets/mask-image2.png');
+  mask-image: url('~src/assets/mask-image2.png');
+}
+
+
 
 
