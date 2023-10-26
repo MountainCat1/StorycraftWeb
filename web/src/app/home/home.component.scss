@@ -1,5 +1,10 @@
 @import "src/styles/styles";
 
+.center {
+  margin: auto;
+  text-align: center;
+}
+
 .menu-break {
   background-color: $background-color-1;
   width: 100vw;
@@ -30,6 +35,14 @@
   -1px 1px 0 #000, /* Bottom-left shadow (black) */
   1px 1px 0 #000, /* Bottom-right shadow (black) */
   3px 3px 3px #000;
+
+  @media (max-width: 1050px) {
+    font-size: 48px; // Reduce font size for smaller screens
+  }
+
+  @media (max-width: 650px) {
+    font-size: 26px; // Reduce font size for smaller screens
+  }
 }
 
 .logo-subtitle {
@@ -42,6 +55,34 @@
   -1px 1px 0 #000, /* Bottom-left shadow (black) */
   1px 1px 0 #000, /* Bottom-right shadow (black) */
   3px 3px 3px #000;
+
+  @media (max-width: 1050px) {
+    font-size: 23px; // Reduce font size for smaller screens
+  }
+  @media (max-width: 650px) {
+    font-size: 15px; // Reduce font size for smaller screens
+  }
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: 2em;
+  gap: 2em;
+}
+
+.contact-list > .contact-button {
+  width: 130px;
+  height: 90px;
+}
+.contact-list > .contact-button > .mdc-button__label {
+  display: none;
+}
+.contact-icon {
+  width: 50px;
+  height: 50px;
 }
 
 
@@ -59,7 +100,7 @@
 }
 
 .menu-section-part {
-  width: 950px;
+  max-width: 950px;
   margin: auto;
 
   display: flex;
@@ -72,17 +113,23 @@
   align-items: center;
   justify-content: space-between;
   gap: 25px;
+
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .menu-section-row > div {
-  width: 100%;
+  @media (min-width: 992px) {
+    width: 100%;
+  }
 }
 
 .minecraft-header {
   font-family: 'Minecraft', serif;
   font-size: 1.8em;
   font-smooth: never;
-  color: #1C1C1C;
 }
 
 .info-flex {
@@ -93,10 +140,14 @@
 
 .masked-image > img {
   height: inherit;
+  width: inherit;
+
   top: 50%; /* Move the top edge of the image to the vertical center */
   left: 50%; /* Move the left edge of the image to the horizontal center */
   transform: translate(-50%, -50%);
   position: absolute;
+
+
 }
 
 .masked-image {
@@ -108,7 +159,16 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-position: center;
+  mask-size: 475px;
 
   display: block;
   position: relative;
+
+  @media (max-width: 992px) {
+    height: 300px;
+    width: 400px;
+    mask-size: 400px 320px;
+  }
 }
+
+
