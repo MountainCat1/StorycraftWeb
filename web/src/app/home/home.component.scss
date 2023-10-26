@@ -30,10 +30,13 @@
 
   font-size: 78px;
 
-  text-shadow: -1px -1px 0 #000, /* Top-left shadow (black) */
-  1px -1px 0 #000, /* Top-right shadow (black) */
-  -1px 1px 0 #000, /* Bottom-left shadow (black) */
-  1px 1px 0 #000, /* Bottom-right shadow (black) */
+  $outline-thickness: 1px;
+  $outline-blur: 4px;
+
+  text-shadow: $outline-thickness -$outline-thickness $outline-blur #000, /* Top-left shadow (black) */
+  $outline-thickness -$outline-thickness $outline-blur #000, /* Top-right shadow (black) */
+  -$outline-thickness $outline-thickness $outline-blur #000, /* Bottom-left shadow (black) */
+  $outline-thickness $outline-thickness $outline-blur #000, /* Bottom-right shadow (black) */
   3px 3px 3px #000;
 
   @media (max-width: 1050px) {
@@ -50,10 +53,13 @@
 
   font-size: 35px;
 
-  text-shadow: -1px -1px 0 #000, /* Top-left shadow (black) */
-  1px -1px 0 #000, /* Top-right shadow (black) */
-  -1px 1px 0 #000, /* Bottom-left shadow (black) */
-  1px 1px 0 #000, /* Bottom-right shadow (black) */
+  $outline-thickness: 1px;
+  $outline-blur: 3px;
+
+  text-shadow: $outline-thickness -$outline-thickness $outline-blur #000, /* Top-left shadow (black) */
+  $outline-thickness -$outline-thickness $outline-blur #000, /* Top-right shadow (black) */
+  -$outline-thickness $outline-thickness $outline-blur #000, /* Bottom-left shadow (black) */
+  $outline-thickness $outline-thickness $outline-blur #000, /* Bottom-right shadow (black) */
   3px 3px 3px #000;
 
   @media (max-width: 1050px) {
