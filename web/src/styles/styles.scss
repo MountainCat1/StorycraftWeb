@@ -60,16 +60,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.bg-image {
-  // Maximum height should not exceed viewport height
-  height: 100vh;
-
-  // Background image properties
-  background-image: url('../assets/img/2023-10-26_11.35.26.png');
-  background-size: cover; // Ensures the image covers the container fully
-  background-position: center; // Center the image within the container
-  background-repeat: no-repeat;
-}
 
 // override the rules from Angular Material so that caret is more visible
 .mdc-text-field .mdc-text-field__input {
@@ -84,4 +74,18 @@ body {
 :root {
 // override the rules from Angular Material so that the floating label is more visible
   --mdc-filled-text-field-focus-label-text-color: rgba(255, 255, 255, 0.6);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  // Set the background image
+  background-image: url('../assets/img/2023-10-26_11.35.35.png');
+  background-size: cover; /* Cover the entire screen */
+  background-position: center; /* Center the image */
+
+  // Optionally, add other styles for the background, like fixed position
+  background-attachment: fixed;
 }

@@ -1,0 +1,114 @@
+@import "src/styles/styles";
+
+.menu-break {
+  background-color: $background-color-1;
+  width: 100vw;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.window {
+  width: 100vw;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo {
+  font-family: 'Minecraft', serif;
+
+  font-size: 78px;
+
+  text-shadow: -1px -1px 0 #000, /* Top-left shadow (black) */
+  1px -1px 0 #000, /* Top-right shadow (black) */
+  -1px 1px 0 #000, /* Bottom-left shadow (black) */
+  1px 1px 0 #000, /* Bottom-right shadow (black) */
+  3px 3px 3px #000;
+}
+
+.logo-subtitle {
+  font-family: 'Minecraft', serif;
+
+  font-size: 35px;
+
+  text-shadow: -1px -1px 0 #000, /* Top-left shadow (black) */
+  1px -1px 0 #000, /* Top-right shadow (black) */
+  -1px 1px 0 #000, /* Bottom-left shadow (black) */
+  1px 1px 0 #000, /* Bottom-right shadow (black) */
+  3px 3px 3px #000;
+}
+
+
+.menu-section {
+  background-color: aliceblue;
+  width: 100vw;
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+  font-family: 'Minecraft', serif;
+  font-size: 1.2em;
+  font-smooth: never;
+  color: #1C1C1C;
+  line-height: 26px;
+}
+
+.menu-section-part {
+  width: 950px;
+  margin: auto;
+
+  display: flex;
+  gap: 50px;
+}
+
+.menu-section-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.menu-section-row > div {
+  width: 100%;
+}
+
+.minecraft-header {
+  font-family: 'Minecraft', serif;
+  font-size: 1.8em;
+  font-smooth: never;
+  color: #1C1C1C;
+}
+
+.info-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.masked-image > img {
+  height: inherit;
+  top: 50%; /* Move the top edge of the image to the vertical center */
+  left: 50%; /* Move the left edge of the image to the horizontal center */
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.masked-image {
+  height: 400px;
+  width: 400px;
+
+  -webkit-mask-image: url('~src/assets/mask-image.png');
+  mask-image: url('~src/assets/mask-image.png');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  display: block;
+  position: relative;
+}

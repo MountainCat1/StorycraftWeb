@@ -8,10 +8,13 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatInputModule} from "@angular/material/input";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
+import { HomeComponent } from './home/home.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import {MatButtonModule} from "@angular/material/button";
     MatToolbarModule,
     MatInputModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent]
