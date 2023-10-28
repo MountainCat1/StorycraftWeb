@@ -12,13 +12,15 @@ import { HomeComponent } from './home/home.component';
 import {NgOptimizedImage} from "@angular/common";
 import { InfoComponent } from './info/info.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     InfoComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

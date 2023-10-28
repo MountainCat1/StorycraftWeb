@@ -1,3 +1,5 @@
+@import "src/styles/styles";
+
 
 .tool-bar {
   position: fixed;
@@ -11,3 +13,70 @@
   width: 2em;
 }
 
+.menu-break {
+  background-color: $background-color-1;
+  width: 100vw;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.menu-section-full {
+  width: 100vw;
+}
+
+.menu-section-thin {
+  max-width: 60rem;
+  margin: auto;
+}
+
+.menu-section {
+  background-color: aliceblue;
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+  font-family: 'Minecraft', serif;
+  font-size: 1.2em;
+  font-smooth: never;
+  color: #1C1C1C;
+  line-height: 26px;
+}
+
+
+.menu-section-part {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.menu-section-part-flex {
+  display: flex;
+  gap: 50px;
+}
+
+@mixin minecraft-font {
+  font-family: $minecraft-font;
+  font-smooth: never;
+}
+
+h1.minecraft-header {
+  @include minecraft-font;
+
+  font-size: 2.1rem;
+
+  text-align: center;
+}
+
+h2.minecraft-header {
+  @include minecraft-font;
+
+  font-size: 1.5rem;
+}
+
+h3.minecraft-header {
+  @include minecraft-font;
+
+  font-size: 1.3rem;
+}
+
+.page-title {
+  margin-top: 1.5em;
+}

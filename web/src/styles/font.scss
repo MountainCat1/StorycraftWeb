@@ -10,6 +10,8 @@ html {
   color: $font-color-1;
 }
 
+$minecraft-font: 'Minecraft', serif;
+
 @font-face {
   font-family: 'Lato';
   src: url('~src/fonts/Lato-Regular.ttf') format('truetype');

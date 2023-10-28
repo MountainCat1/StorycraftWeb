@@ -1,0 +1,32 @@
+@import "src/styles/styles";
+@import "../app.component.scss";
+
+
+.info-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 15em 1fr;
+  column-gap: 2em;
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-row-title {
+  display: block;
+  text-align: right;
+
+  @media (max-width: 992px) {
+    text-align: left;
+  }
+}
+
+.info-row-content {
+
+}
