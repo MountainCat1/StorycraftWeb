@@ -22,6 +22,9 @@ FROM nginx:1.21
 # Copy the built Angular app from the previous stage to the NGINX document root
 COPY --from=builder /app/dist/web /usr/share/nginx/html
 
+# Copy the custom NGINX configuration
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+
 # Expose port 80 to the outside world
 EXPOSE 80
 
