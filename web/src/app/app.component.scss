@@ -7,6 +7,12 @@
   left: 0; // Align it to the left
   right: 0; // Align it to the right
   z-index: 100; // Adjust the z-index as needed
+
+
+  @media (max-width: $mobile) {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .example-spacer {
@@ -15,26 +21,26 @@
 
 .menu-break {
   background-color: $background-color-1;
-  width: 100vw;
   padding-top: 3em;
   padding-bottom: 3em;
 }
 
 .menu-section-full {
-  width: 100vw;
+  //width: 100vw;
 }
 
 .menu-section-thin {
   max-width: 60rem;
+  padding: 0 3em;
   margin: auto;
 }
 
 .menu-section {
   background-color: aliceblue;
-  padding-top: 5em;
-  padding-bottom: 5em;
 
-  font-family: 'Minecraft', serif;
+  padding: 5em min(1.5em, 5%);
+
+  font-family: $default-font;
   font-size: 1.2em;
   font-smooth: never;
   color: #1C1C1C;
@@ -44,10 +50,9 @@
 
 .menu-section-part {
   max-width: 1050px;
+  width: 100%;
   margin: auto;
 
-  padding-right: 1em;
-  padding-left: 1em;
 }
 
 .menu-section-part-flex {
@@ -55,10 +60,6 @@
   gap: 50px;
 }
 
-@mixin minecraft-font {
-  font-family: $minecraft-font;
-  font-smooth: never;
-}
 
 h1.minecraft-header {
   @include minecraft-font;

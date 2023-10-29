@@ -7,7 +7,6 @@
 }
 
 .window {
-  width: 100vw;
   padding-top: 15vh;
   padding-bottom: 15vh;
   height: 70vh;
@@ -98,8 +97,6 @@
   left: 50%; /* Move the left edge of the image to the horizontal center */
   transform: translate(-50%, -50%);
   position: absolute;
-
-
 }
 
 .masked-image {
@@ -118,6 +115,12 @@
     height: 300px;
     width: 400px;
     mask-size: 400px 320px;
+  }
+
+  @media (max-width: $mobile) {
+    height: 200px;
+    width: 300px;
+    mask-size: 300px 220px;
   }
 }
 

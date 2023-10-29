@@ -11,6 +11,7 @@ html {
 }
 
 $minecraft-font: 'Minecraft', serif;
+$default-font: 'Lato', serif;
 
 @font-face {
   font-family: 'Lato';
@@ -20,4 +21,9 @@ $minecraft-font: 'Minecraft', serif;
 @font-face {
   font-family: 'Minecraft';
   src: url('~src/fonts/MinecraftBold-nMK1.otf');
+}
+
+@mixin minecraft-font {
+  font-family: $minecraft-font;
+  font-smooth: never;
 }
